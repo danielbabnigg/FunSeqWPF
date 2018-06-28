@@ -54,8 +54,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Test01.xaml.cs">
-      <DependentUpon>Test01.xaml</DependentUpon>
+    <Compile Include="Test02.xaml.cs">
+      <DependentUpon>Test02.xaml</DependentUpon>
     </Compile>
     <Page Include="ImageSeries.xaml">
       <SubType>Designer</SubType>
@@ -80,7 +80,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Test01.xaml">
+    <Page Include="Test02.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

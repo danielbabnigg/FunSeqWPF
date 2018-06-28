@@ -37,10 +37,10 @@ namespace FunSeqWPF
             myIS.Show();
         }
 
-        private void test01_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Test01 myT = new Test01();
-            myT.Show();
+            Test02 myTest02 = new Test02();
+            myTest02.Show();
         }
     }
 }

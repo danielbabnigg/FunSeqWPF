@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace FunSeqWPF
 {
     /// <summary>
-    /// Interaction logic for test01.xaml
+    /// Interaction logic for Test02.xaml
     /// </summary>
-    public partial class Test01 : Window
+    public partial class Test02 : Window
     {
-        public Test01()
+        public Test02()
         {
             InitializeComponent();
         }
