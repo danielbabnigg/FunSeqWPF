@@ -7,6 +7,82 @@
         mc:Ignorable="d"
         Title="Test02" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="203*"/>
+            <ColumnDefinition Width="591*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Test Button 1" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top" Width="102" Click="Button_Click" Background="Red" Foreground="White"/>
+        <Button Content="Test Button 3" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" Width="102" Background="#FFFFDC00" Foreground="Black" MouseDoubleClick="Button_MouseDoubleClick"/>
+        <Button Content="Test Button 2" HorizontalAlignment="Left" Margin="10,33,0,0" VerticalAlignment="Top" Width="102" Background="#FFFF6500" Foreground="White" MouseLeave="Button_MouseLeave"/>
+        <Button Content="Test Button 4" HorizontalAlignment="Left" Margin="10,81,0,0" VerticalAlignment="Top" Width="102" Background="#FF6BFF00" MouseWheel="Button_MouseWheel"/>
+        <DatePicker HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" CalendarClosed="DatePicker_CalendarClosed"/>
+        <Slider HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Width="102" ValueChanged="Slider_ValueChanged" Maximum="5" SmallChange="1" Cursor="Hand"/>
+        <TabControl HorizontalAlignment="Left" Height="100" Margin="10,157,0,0" VerticalAlignment="Top" Width="102">
+            <TabItem Header="Color1">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FF9FCE15" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FFC83C3C"/>
+            </TabItem>
+            <TabItem Header="Color2">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FF329958" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FF2A9F3C"/>
+            </TabItem>
+            <TabItem Header="Color3">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FFFA30C9" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FFFDA212" MouseEnter="Grid_MouseEnter">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70*"/>
+                        <ColumnDefinition Width="27*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Color4">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FFF04C0A" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FF571ACA">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="19*"/>
+                        <ColumnDefinition Width="13*"/>
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <CheckBox Content="hi hi hi" HorizontalAlignment="Left" Margin="10,262,0,0" VerticalAlignment="Top" Width="102" Checked="CheckBox_Checked">
+            <CheckBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF59FF00" Offset="0"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                </LinearGradientBrush>
+            </CheckBox.Background>
+            <CheckBox.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF00AE66" Offset="0"/>
+                    <GradientStop Color="#FFFF0089" Offset="1"/>
+                </LinearGradientBrush>
+            </CheckBox.Foreground>
+        </CheckBox>
+        <Ellipse Fill="#FF0E0E5A" HorizontalAlignment="Left" Height="44" Margin="10,282,0,0" Stroke="#FFFF7700" VerticalAlignment="Top" Width="102" MouseEnter="Ellipse_MouseEnter"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="10,331,0,0" VerticalAlignment="Top" Width="102" PreviewMouseDoubleClick="PasswordBox_PreviewMouseDoubleClick" TextInput="PasswordBox_TextInput"/>
+        <ScrollBar HorizontalAlignment="Left" Margin="10,354,0,0" VerticalAlignment="Top" Height="56" Width="102" Drop="ScrollBar_Drop"/>
+        <Rectangle Fill="#FF0E0E5A" HorizontalAlignment="Left" Height="400" Margin="117,10,0,0" Stroke="#FFFF7700" VerticalAlignment="Top" Width="15" MouseWheel="Rectangle_MouseWheel"/>
+        <Frame Content="Frame" HorizontalAlignment="Left" Height="100" Margin="168,73,0,0" VerticalAlignment="Top" Width="100" Grid.ColumnSpan="2" BorderBrush="#FFA82121" Background="Black" Navigated="Frame_Navigated"/>
     </Grid>
 </Window>
